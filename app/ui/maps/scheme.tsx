@@ -21,6 +21,7 @@ export default function Scheme({
           src={src}
           width={600}
           height={600}
+          placeholder="blur"
           alt={`Схема карты ${mapName}`}
         />
       ))}

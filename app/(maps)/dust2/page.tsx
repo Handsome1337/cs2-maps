@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: 'Обозначения позиций и раскидки гранат на карте Dust2'
 };
 
-const IMAGES: SchemeImage[] = [{ src: '/dust2.webp', mapName: 'Dust2' }];
+const IMAGES: SchemeImage[] = [{ src: '/dust2.jpg', mapName: 'Dust2' }];
 
 export default function Dust2() {
   return (

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: 'Обозначения позиций и раскидки гранат на карте Mirage'
 };
 
-const IMAGES: SchemeImage[] = [{ src: '/mirage.webp', mapName: 'Mirage' }];
+const IMAGES: SchemeImage[] = [{ src: '/mirage.jpg', mapName: 'Mirage' }];
 
 export default function Mirage() {
   return (

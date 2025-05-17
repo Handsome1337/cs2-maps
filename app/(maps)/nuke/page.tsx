@@ -9,8 +9,8 @@ export const metadata: Metadata = {
 };
 
 const IMAGES: SchemeImage[] = [
-  { src: '/nuke-upper.webp', mapName: 'Nuke (сверху)' },
-  { src: '/nuke-lower.webp', mapName: 'Nuke (снизу)' }
+  { src: '/nuke-upper.jpg', mapName: 'Nuke (сверху)' },
+  { src: '/nuke-lower.jpg', mapName: 'Nuke (снизу)' }
 ];
 
 export default function Nuke() {

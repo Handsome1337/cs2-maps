@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: 'Обозначения позиций и раскидки гранат на карте Inferno'
 };
 
-const IMAGES: SchemeImage[] = [{ src: '/inferno.webp', mapName: 'Inferno' }];
+const IMAGES: SchemeImage[] = [{ src: '/inferno.jpg', mapName: 'Inferno' }];
 
 export default function Inferno() {
   return (

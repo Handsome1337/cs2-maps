@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: 'Обозначения позиций и раскидки гранат на карте Anubis'
 };
 
-const IMAGES: SchemeImage[] = [{ src: '/anubis.webp', mapName: 'Anubis' }];
+const IMAGES: SchemeImage[] = [{ src: '/anubis.jpg', mapName: 'Anubis' }];
 
 export default function Anubis() {
   return (

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: 'Обозначения позиций и раскидки гранат на карте Ancient'
 };
 
-const IMAGES: SchemeImage[] = [{ src: '/ancient.webp', mapName: 'Ancient' }];
+const IMAGES: SchemeImage[] = [{ src: '/ancient.jpg', mapName: 'Ancient' }];
 
 export default function Ancient() {
   return (

@@ -9,8 +9,8 @@ export const metadata: Metadata = {
 };
 
 const IMAGES: SchemeImage[] = [
-  { src: '/train-upper.webp', mapName: 'Train (сверху)' },
-  { src: '/train-lower.webp', mapName: 'Train (снизу)' }
+  { src: '/train-upper.jpg', mapName: 'Train (сверху)' },
+  { src: '/train-lower.jpg', mapName: 'Train (снизу)' }
 ];
 
 export default function Train() {

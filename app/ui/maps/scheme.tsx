@@ -1,4 +1,6 @@
 import Image from 'next/image';
+import { AnchorMap } from '@/app/lib/constants';
+import { capitalize } from '@/app/lib/utils';
 
 export interface SchemeImage {
   src: string;
@@ -11,8 +13,8 @@ export default function Scheme({
   images: SchemeImage[];
 }>) {
   return (
-    <details open>
-      <summary className="text-foreground font-[family-name:var(--font-tektur-sans)] text-lg">
+    <details id={AnchorMap.RADAR.id} open>
+      <summary className="text-foreground w-[600] font-[family-name:var(--font-tektur-sans)] text-lg">
         Схема карты
       </summary>
       {images.map(({ src, mapName }) => (
@@ -22,6 +24,7 @@ export default function Scheme({
           width={600}
           height={600}
           alt={`Схема карты ${mapName}`}
+          title={capitalize(mapName.match(/\((.*)\)/)?.pop())}
         />
       ))}
     </details>

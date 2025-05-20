@@ -21,8 +21,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ru">
-      <body className={`${tekturSans.variable} antialiased`}>{children}</body>
+    <html lang="ru" className="scroll-smooth">
+      <body className={`grid grid-cols-[auto_1fr] ${tekturSans.variable} antialiased`}>
+        {children}
+      </body>
     </html>
   );
 }

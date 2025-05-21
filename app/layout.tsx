@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Tektur } from 'next/font/google';
+import Script from 'next/script';
 import './globals.css';
 
 const tekturSans = Tektur({
@@ -22,8 +23,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru" className="scroll-smooth">
-      <body className={`grid grid-cols-[auto_1fr] ${tekturSans.variable} antialiased`}>
+      <body
+        className={`grid grid-cols-[auto_1fr] grid-rows-[auto_1fr] h-screen ${tekturSans.variable} antialiased`}
+      >
         {children}
+        <Script src="https://player.vimeo.com/api/player.js"></Script>
       </body>
     </html>
   );

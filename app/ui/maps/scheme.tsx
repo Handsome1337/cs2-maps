@@ -14,7 +14,7 @@ export default function Scheme({
 }>) {
   return (
     <details id={AnchorMap.RADAR.id} open>
-      <summary className="text-foreground w-[600] font-[family-name:var(--font-tektur-sans)] text-lg">
+      <summary className="text-foreground w-[600] font-[family-name:var(--font-tektur-sans)] font-semibold text-lg">
         Схема карты
       </summary>
       {images.map(({ src, mapName }) => (
@@ -23,6 +23,7 @@ export default function Scheme({
           src={src}
           width={600}
           height={600}
+          loading="lazy"
           alt={`Схема карты ${mapName}`}
           title={capitalize(mapName.match(/\((.*)\)/)?.pop())}
         />

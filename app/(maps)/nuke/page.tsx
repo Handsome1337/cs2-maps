@@ -18,8 +18,8 @@ const NAVIGATION_ITEMS: NavigationItem[] = [
   { data: AnchorMap.FLASHES }
 ];
 const IMAGES: SchemeImage[] = [
-  { src: '/nuke-upper.jpg', mapName: 'Nuke (сверху)' },
-  { src: '/nuke-lower.jpg', mapName: 'Nuke (снизу)' }
+  { src: '/nuke/map-upper.jpg', mapName: 'Nuke (сверху)' },
+  { src: '/nuke/map-lower.jpg', mapName: 'Nuke (снизу)' }
 ];
 
 export default function Nuke() {
@@ -29,23 +29,23 @@ export default function Nuke() {
       <Navigation items={NAVIGATION_ITEMS} />
       <Main>
         <Scheme images={IMAGES} />
-        <section id={AnchorMap.SMOKES.id}>
-          <h2 className="text-foreground font-[family-name:var(--font-tektur-sans)] text-lg">
+        <section id={AnchorMap.SMOKES.id} className="mt-4">
+          <h2 className="text-foreground text-center font-[family-name:var(--font-tektur-sans)] font-semibold text-xl">
             {AnchorMap.SMOKES.name}
           </h2>
         </section>
-        <section id={AnchorMap.MOLOTOVS.id}>
-          <h2 className="text-foreground font-[family-name:var(--font-tektur-sans)] text-lg">
+        <section id={AnchorMap.MOLOTOVS.id} className="mt-4">
+          <h2 className="text-foreground text-center font-[family-name:var(--font-tektur-sans)] font-semibold text-xl">
             {AnchorMap.MOLOTOVS.name}
           </h2>
         </section>
-        <section id={AnchorMap.GRENADES.id}>
-          <h2 className="text-foreground font-[family-name:var(--font-tektur-sans)] text-lg">
+        <section id={AnchorMap.GRENADES.id} className="mt-4">
+          <h2 className="text-foreground text-center font-[family-name:var(--font-tektur-sans)] font-semibold text-xl">
             {AnchorMap.GRENADES.name}
           </h2>
         </section>
-        <section id={AnchorMap.FLASHES.id}>
-          <h2 className="text-foreground font-[family-name:var(--font-tektur-sans)] text-lg">
+        <section id={AnchorMap.FLASHES.id} className="mt-4">
+          <h2 className="text-foreground text-center font-[family-name:var(--font-tektur-sans)] font-semibold text-xl">
             {AnchorMap.FLASHES.name}
           </h2>
         </section>

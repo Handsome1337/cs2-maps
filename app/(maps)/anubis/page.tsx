@@ -359,7 +359,7 @@ export default function Anubis() {
               ></iframe>
             </div>
           </section>
-          <section className="flex flex-col gap-1 py-4 border-b border-b-foreground border-solid">
+          <section className="flex flex-col gap-1 py-4">
             <h3
               id="palace-to-a-main-flash"
               className="text-foreground font-[family-name:var(--font-tektur-sans)] font-medium text-lg"
